@@ -6,7 +6,7 @@
 /*   By: jajung <jajung@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/04 15:57:06 by jajung            #+#    #+#             */
-/*   Updated: 2021/02/04 15:57:37 by jajung           ###   ########.fr       */
+/*   Updated: 2021/03/05 01:17:19 by jajung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,24 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*str;
-	size_t	s1_len;
-	size_t	s2_len;
+	char	*ptr;
+	size_t	len_s1;
+	size_t	len_s2;
 
-	s1_len = ft_strlen(s1);
-	s2_len = ft_strlen(s2);
-	if (!s1 || !s2)
-		return (NULL);
-	if (!(str = (char*)malloc(sizeof(char) * (s1_len + s2_len + 1))))
-		return (0);
-	ft_strlcpy(str, s1, s1_len + 1);
-	ft_strlcat(str + (s1_len), s2, s2_len + 1);
-	return (str);
+	ptr = 0;
+	if (s1 != 0 && s2 != 0)
+	{
+		len_s1 = ft_strlen(s1);
+		len_s2 = ft_strlen(s2);
+		ptr = (char *)malloc(sizeof(char) * (len_s1 + len_s2 + 1));
+		if (!ptr)
+			return (NULL);
+		if (s1)
+			ft_strlcpy(ptr, s1, len_s1 + 1);
+		else
+			ft_strlcpy(ptr, s2, len_s2 + 1);
+		if (s1 && s2)
+			ft_strlcat(ptr, s2, len_s1 + len_s2 + 1);
+	}
+	return (ptr);
 }

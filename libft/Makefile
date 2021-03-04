@@ -6,7 +6,7 @@
 #    By: jajung <jajung@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/27 23:57:03 by jajung            #+#    #+#              #
-#    Updated: 2021/03/03 02:48:50 by jajung           ###   ########.fr        #
+#    Updated: 2021/03/05 01:31:44 by jajung           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,11 +52,6 @@ BONUS_FILES =	ft_lstnew.c \
 				ft_lstdelone.c \
 				ft_lstadd_front.c \
 				ft_lstlast.c \
-				ft_lstadd_back.c \
-				ft_lstsize.c \
-				ft_lstclear.c \
-				ft_lstiter.c \
-				ft_lstmap.c
 
 
 OBJS = $(FILES:%.c=%.o)

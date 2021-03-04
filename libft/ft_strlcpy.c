@@ -6,7 +6,7 @@
 /*   By: jajung <jajung@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/04 04:14:43 by jajung            #+#    #+#             */
-/*   Updated: 2021/02/04 04:15:23 by jajung           ###   ########.fr       */
+/*   Updated: 2021/03/05 00:26:57 by jajung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 	src_len = 0;
 	i = 0;
+	if (dst == NULL || src == NULL)
+		return (0);
 	while (src[src_len] != '\0')
 		src_len++;
 	if (dstsize == 0)
