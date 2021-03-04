@@ -6,7 +6,7 @@
 /*   By: jajung <jajung@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/27 16:54:15 by jajung            #+#    #+#             */
-/*   Updated: 2021/03/05 01:31:36 by jajung           ###   ########.fr       */
+/*   Updated: 2021/03/05 03:16:50 by jajung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int c, int fd);
 void			ft_putstr_fd(char *s, int fd);
 t_list			*ft_lstnew(void *content);
-void			ft_lstdelone(t_list *lst, void (*del)(void*));
+int				ft_lstsize(t_list *lst);
 void			ft_lstadd_front(t_list **lst, t_list *new);
 t_list			*ft_lstlast(t_list *lst);
 

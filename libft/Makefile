@@ -6,7 +6,7 @@
 #    By: jajung <jajung@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/27 23:57:03 by jajung            #+#    #+#              #
-#    Updated: 2021/03/05 01:31:44 by jajung           ###   ########.fr        #
+#    Updated: 2021/03/05 03:16:20 by jajung           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,7 @@ FILES = ft_memset.c \
 		ft_putnbr_fd.c
 
 BONUS_FILES =	ft_lstnew.c \
-				ft_lstdelone.c \
+				ft_lstsize.c \
 				ft_lstadd_front.c \
 				ft_lstlast.c \
 
