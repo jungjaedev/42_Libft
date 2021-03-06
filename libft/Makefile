@@ -6,7 +6,7 @@
 #    By: jajung <jajung@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/27 23:57:03 by jajung            #+#    #+#              #
-#    Updated: 2021/03/05 03:16:20 by jajung           ###   ########.fr        #
+#    Updated: 2021/03/06 13:48:49 by jajung           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,7 @@ FILES = ft_memset.c \
 		ft_putchar_fd.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
-		ft_putnbr_fd.c
+		ft_putnbr_fd.c \
 
 BONUS_FILES =	ft_lstnew.c \
 				ft_lstsize.c \
@@ -68,3 +68,5 @@ fclean: clean
 bonus:	$(OBJS) $(BONUS_OBJS)
 		ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 re: fclean all
+
+.PHONY: bonus all clean fclean re
